@@ -17,9 +17,14 @@ const languages = computed(() => ['All', ...new Set(templates.map(t => t.languag
 
 const filteredTemplates = computed(() => {
   return templates.filter(template => {
+    const query = search.value.toLowerCase()
 
     const matchesSearch =
-      template.title.toLowerCase().includes(search.value.toLowerCase())
+      template.title.toLowerCase().includes(query) ||
+      template.agency.toLowerCase().includes(query) ||
+      template.flow.toLowerCase().includes(query) ||
+      template.channel.toLowerCase().includes(query) ||
+      template.language.toLowerCase().includes(query)
 
     const matchesAgency =
       selectedAgency.value === 'All' || template.agency === selectedAgency.value
@@ -37,14 +42,34 @@ const filteredTemplates = computed(() => {
   })
 })
 
-function copyText(content){
-  navigator.clipboard.writeText(content)
-  alert("Template copied!")
+async function copyHtmlFromFile(filePath) {
+  try {
+    const response = await fetch(filePath)
+    if (!response.ok) {
+      throw new Error('Could not load template file')
+    }
+
+    const html = await response.text()
+    await navigator.clipboard.writeText(html)
+    alert('HTML copied!')
+  } catch (error) {
+    console.error(error)
+    alert('Could not copy HTML')
+  }
+}
+
+async function copyText(content) {
+  try {
+    await navigator.clipboard.writeText(content)
+    alert('Template copied!')
+  } catch (error) {
+    console.error(error)
+    alert('Could not copy template')
+  }
 }
 </script>
 
 <style>
-
 .filters{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
@@ -71,6 +96,7 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 margin-bottom:10px;
+gap:12px;
 }
 
 .channel{
@@ -78,6 +104,7 @@ padding:4px 10px;
 border-radius:20px;
 font-size:12px;
 font-weight:600;
+white-space:nowrap;
 }
 
 .email{
@@ -105,6 +132,8 @@ padding:4px 8px;
 margin-right:6px;
 border-radius:6px;
 font-size:12px;
+display:inline-block;
+margin-bottom:6px;
 }
 
 .preview{
@@ -113,6 +142,7 @@ margin-top:15px;
 height:500px;
 width:100%;
 border-radius:8px;
+background:white;
 }
 
 .textPreview{
@@ -122,24 +152,33 @@ border-radius:8px;
 margin-top:15px;
 white-space:pre-wrap;
 font-family:monospace;
+border:1px solid #e5e5e5;
 }
 
 .button{
 display:inline-block;
 margin-top:10px;
-padding:6px 12px;
+padding:8px 14px;
 background:#3e63dd;
 color:white;
 border-radius:6px;
 text-decoration:none;
 font-size:13px;
 margin-right:10px;
+border:none;
+cursor:pointer;
 }
 
 .copy{
 background:#22c55e;
 }
 
+.empty{
+border:1px dashed #ccc;
+padding:18px;
+border-radius:10px;
+color:#666;
+}
 </style>
 
 <div class="filters">
@@ -147,24 +186,28 @@ background:#22c55e;
 <input v-model="search" class="input" placeholder="Search templates">
 
 <select v-model="selectedAgency" class="select">
-<option v-for="agency in agencies">{{agency}}</option>
+  <option v-for="agency in agencies" :key="agency" :value="agency">{{agency}}</option>
 </select>
 
 <select v-model="selectedFlow" class="select">
-<option v-for="flow in flows">{{flow}}</option>
+  <option v-for="flow in flows" :key="flow" :value="flow">{{flow}}</option>
 </select>
 
 <select v-model="selectedChannel" class="select">
-<option v-for="channel in channels">{{channel}}</option>
+  <option v-for="channel in channels" :key="channel" :value="channel">{{channel}}</option>
 </select>
 
 <select v-model="selectedLanguage" class="select">
-<option v-for="language in languages">{{language}}</option>
+  <option v-for="language in languages" :key="language" :value="language">{{language}}</option>
 </select>
 
 </div>
 
-<div v-for="template in filteredTemplates" class="card">
+<div v-if="filteredTemplates.length === 0" class="empty">
+No templates found with the selected filters.
+</div>
+
+<div v-for="template in filteredTemplates" :key="template.id" class="card">
 
 <div class="header">
 
@@ -194,6 +237,12 @@ whatsapp: template.channel === 'WhatsApp'
 Open Full Template
 </a>
 
+<button
+class="button copy"
+@click="copyHtmlFromFile(template.file)">
+Copy HTML
+</button>
+
 <iframe
 class="preview"
 :src="template.file">
@@ -201,7 +250,7 @@ class="preview"
 
 </div>
 
-<div v-if="template.type === 'text'">
+<div v-else-if="template.type === 'text'">
 
 <button
 class="button copy"
