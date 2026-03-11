@@ -78,7 +78,7 @@ function walkTemplates() {
           const channel = channelMap[channelFolder] || channelFolder
           const lang = formatLanguage(language)
 
-          const publicFilePath = `/templates/${channelFolder}/${agencyFolder}/${flowFolder}/${fileName}`
+          const publicFilePath = `/template-docs-platform/templates/${channelFolder}/${agencyFolder}/${flowFolder}/${fileName}`
           const absoluteFilePath = path.join(flowPath, fileName)
 
           const template = {

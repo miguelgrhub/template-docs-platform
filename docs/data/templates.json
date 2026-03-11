@@ -7,7 +7,7 @@
     "channel": "Email",
     "language": "EN",
     "type": "html",
-    "file": "/templates/email/nexus/prearrival-3/en.html"
+    "file": "/template-docs-platform/templates/email/nexus/prearrival-3/en.html"
   },
   {
     "id": "nexus-prearrival-3-sms-en",
