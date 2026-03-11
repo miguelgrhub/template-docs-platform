@@ -1,0 +1,32 @@
+[
+  {
+    "id": "nexus-prearrival-3-email-en",
+    "title": "Prearrival 3 - Nexus",
+    "agency": "Nexus",
+    "flow": "Prearrival 3",
+    "channel": "Email",
+    "language": "EN",
+    "type": "html",
+    "file": "/templates/email/nexus/prearrival-3/en.html"
+  },
+  {
+    "id": "nexus-prearrival-3-sms-en",
+    "title": "Prearrival 3 - Nexus",
+    "agency": "Nexus",
+    "flow": "Prearrival 3",
+    "channel": "SMS",
+    "language": "EN",
+    "type": "text",
+    "content": "We’re excited to assist you with your upcoming trip to {{contact.Destination}}.\r\n\r\nUpgrade your stay with an exclusive transfer upgrade— tap to WhatsApp us now and elevate your ride: https://api.whatsapp.com/send?phone=529981472600 —or explore our top 3 awarded experiences of {{contact.year}} in {{contact.Destination}} here: {{contact.deeplink_sms}}.\r\n\r\nYour Local Expert is just a click away. Call us at {{contact.ICC_Tel}}.\r\nRest of World +52 998 251 6559\r\n\r\nReply ‘Stop’ to unsubscribe from messages.\r\n*Message and data rates may apply."
+  },
+  {
+    "id": "nexus-prearrival-3-whatsapp-en",
+    "title": "Prearrival 3 - Nexus",
+    "agency": "Nexus",
+    "flow": "Prearrival 3",
+    "channel": "WhatsApp",
+    "language": "EN",
+    "type": "text",
+    "content": "We're excited to assist you with your upcoming trip to {{1}}.🏖️\r\n\r\nUpgrade your experience with a seamless hotel transfer or explore our top 3 awarded experiences of {{2}} in {{3}}.🌴\r\n\r\nYour Local Expert is just a click away. Call us at {{4}}.☀️\r\n\r\nReply 'Stop' to unsubscribe from messages.\r\n*Message and data rates may apply."
+  }
+]

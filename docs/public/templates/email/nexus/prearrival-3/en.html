@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap" rel="stylesheet">
+<head>
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            font-family: 'DM Sans', sans-serif;
+            color: #333333;
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .container-email{
+            width: 100%;
+        }
+
+        .body-email{
+            width: 650px;
+            margin: auto;
+            background-color: #FCFCFC;
+        }
+
+        @media(max-width:800px){
+            .body-email{
+                width: 100% !important;
+            }
+        }
+
+        .banner-header{
+            background-image: url("https://www.nexustours.com/images/upload//Email-content/2024/Royalton/bannerPreArrival3.png");
+            background-position: center;
+            background-size: cover;
+            height: 448px;
+            background-position: center;
+        }
+        @media(max-width:800px){
+            .banner-header{
+                height: 60vw !important;
+            }
+        }
+        @media(max-width:480px){
+            .banner-header{
+                height: 75vw !important;
+            }
+        }
+
+        .line-gradient-image{
+            margin: auto; 
+            width: 80%; 
+            height: 5px; 
+            background-position: center;
+            background-size: cover;
+            background-image: url('https://www.nexustours.com/images/upload//Email-content/Background-RR-Header-Line.png');
+        }
+
+        .border-bottom-line{
+            border-bottom-right-radius: 70px;
+            border-bottom-left-radius: 70px;
+        }
+
+        .border-top-line{
+            border-top-right-radius: 70px;
+            border-top-left-radius: 70px;
+        }
+
+        .logo-nexus{
+            width: fit-content; 
+            margin: auto;
+            padding: 21px 0px;
+        }
+
+        .card-email{
+            background-color: #FFF;
+            width: 95%;
+            margin: auto;
+            border-radius: 15px;
+            padding: 25px 22px;
+            box-sizing: border-box;
+            border: 1px solid #e5e5e591;
+        }
+
+        .margin-bottom-22{
+            margin-bottom: 22px;
+        }
+
+        .margin-bottom-5{
+            margin-bottom: 5px;
+        }
+
+        .parrafo-card{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 134%;
+            margin: 0;
+        }
+        
+        .orange-nexus{
+            color: #F17121;
+        }
+
+        .bold-text{
+            font-weight: 700;
+        }
+
+        .cards-producto{
+            background-color: #FFF;
+            width: 95%;
+            margin: auto;
+            border-radius: 15px;
+            min-height: 141px;
+            overflow: hidden;
+            height: auto;
+        }
+
+        .container-imagen-card-producto{
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .espacios-cards-productos{
+            height: 100%;
+            table-layout: fixed;
+        }
+        
+        .espacio-izquierda{
+            width: 40%;
+            min-width: 40%;
+            padding: 0;
+        }
+        @media(max-width: 800px){
+            .espacio-izquierda{
+                width: 100% !important;
+                min-width: 100% !important;
+                height: 50vw !important;
+            }
+        }
+        
+        .espacio-derecha{
+            box-sizing: border-box;
+            width: 60%;
+            max-width: 60%;
+            padding: 13px 0px;
+        }
+        @media(max-width: 800px){
+            .espacio-derecha{
+                width: 100% !important;
+                max-width: 100% !important;
+                padding: 0vw 2vw !important;
+            }
+        }
+
+        .container-text-card-producto{
+            padding: 0px 20px;
+            width: 100%;
+        }
+        
+        @media(max-width: 800px){
+            .container-text-card-producto{
+                padding: 2vw 3vw !important;
+            }
+        }
+        
+        .type-text-card-producto{
+            font-size: 12px;
+            line-height: normal;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .title-text-card-producto{
+            font-size: 20px;
+            font-weight: 700;
+            line-height: normal;
+            margin: 0px;
+        }
+
+        @media(max-width: 800px){
+            .title-text-card-producto{
+                font-size: 5vw !important;
+            }
+        }
+
+        .text-card-producto{
+            margin: 0;
+            font-size: 12px;
+            color: #6B6B6B;
+            line-height: normal;
+            font-weight: 400;
+        }
+
+        .background-destination{
+            background-color: #FF731B;
+            border-radius: 0px 11.5px 11.5px 0px;
+            width: fit-content;
+            color: white;
+            overflow: hidden;
+            padding: 0px 8px;
+        }
+
+        .text-destination{
+            font-size: 10px;
+            color: #FFF;
+            line-height: 100%;
+            margin: 0;
+            margin-left: 3px;
+        }
+
+        .logo-maps{
+            height: 9px;
+            width: 8px;
+        }
+
+        .boton-cta{
+            font-weight: 700;
+            color: #FFF;
+            font-size: 14px;
+            padding-right: 10px;
+        }
+        @media(max-width: 800px){
+            .boton-cta{
+                font-size: 3vw !important;
+                padding-right: 2vw !important;
+            }
+        }
+
+        .container-boton-cta{
+            width: fit-content;
+            margin: auto;
+            background-color: #FF731B;
+            border-radius: 30px;
+            padding: 6px 30px;
+        }
+        @media(max-width: 800px){
+            .container-boton-cta{
+                padding: 2vw 6vw !important;
+            }
+        }
+
+        .margin-bottom-5{
+            margin-bottom: 5px;
+        }
+        
+        .margin-bottom-10{
+            margin-bottom: 10px;
+        }
+        
+        .margin-bottom-15{
+            margin-bottom: 15px;
+        }
+
+        .margin-bottom-10{
+            margin-bottom: 10px;
+        }
+        @media(max-width: 800px){
+            .margin-bottom-10{
+                margin-bottom: 2vw !important;
+            }
+        }
+
+        .container-text{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 2.5%;
+        }
+
+        .background-redes-table{
+            background-color: #F17121;
+        }
+
+        .container-redes{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .redes{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #FF621D;
+        }
+
+        .table-redes{
+            border-spacing: 5px;
+            padding: 10px 0px;
+        }
+
+        .container-table-productos{
+            width: 95%;
+            margin: auto;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+        }
+
+        .product-title{
+            text-align: left;
+            padding: 0px 10px;
+            height: auto;
+            background-color: #FF621D;
+            color: #FFF;
+            line-height: 190%;
+        }
+
+        .product-content{
+            text-align: left;
+            padding: 0px 10px;
+            height: auto;
+            background-color: #FFF;
+            line-height: 190%;
+        }
+        @media(max-width:800px){
+            .product-content{
+                padding: 0 2vw !important;
+            }
+        }
+
+        .cta-banner{
+            width: 45px;
+            height: 45px;
+        }
+        @media(max-width:800px){
+            .cta-banner{
+                width: auto !important;
+                height: 9vw !important;
+            }
+        }
+
+        .cta-banner-card{
+            width: 45px;
+            height: 45px;
+        }
+        @media(max-width:800px){
+            .cta-banner-card{
+                width: 9vw !important;
+                height: 9vw !important;
+            }
+        }
+
+        .table-productos{
+            table-layout: fixed;
+        }
+
+        .container-imagen-best{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .text-titles{
+            font-size: 24px;
+            line-height: 130%;
+            font-weight: 700;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .subtext-title-email{
+            margin: 0;
+            font-size: 16px;
+            line-height: 134%;
+            font-weight: 500;
+            color: #333;
+            text-align: center;
+        }
+
+        .table-booknow{
+            vertical-align: middle;
+        }
+
+        .toll{
+            color: #FFF;
+            font-weight: 900;
+            font-size: 17px;
+            margin-top: 0;
+            margin-bottom: 6px;
+        }
+        @media(max-width:800px){
+            .toll{
+                font-size: 3vw !important;
+                margin-bottom: 1vw !important;
+            }
+        }
+
+        .telephone{
+            background-color: #FFF;
+            color: #F17121;
+            box-sizing: border-box;
+            padding: 5px;
+            font-size: 18px;
+            margin: 0;
+            border-radius: 7px;
+            width: 113px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media(max-width:800px){
+            .telephone{
+                font-size: 3.5vw !important;
+                padding: 1vw !important;
+                width: 22vw !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+        }
+
+        .dominio{
+            font-size: 16px;
+            color: #FFF;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+
+        .container-logo-nexus{
+            background-color: transparent;
+            width: 100%;
+        }
+
+        .background-nexus{
+            background-color: #F17121;
+        }
+
+        .plus-cta{
+            width: 12px;
+            height: 12px;
+        }
+        @media(max-width:800px){
+            .plus-cta{
+                width: 3vw !important;
+                height: 3vw !important;
+            }
+        }
+
+        .tag-desk{
+            display: block;
+        }
+        @media(max-width:800px){
+            .tag-desk{
+                display: none !important;
+            }
+        }
+
+        .tag-mob{
+            display: none;
+        }
+        @media(max-width:800px){
+            .tag-mob{
+                display: block !important;
+            }
+        }
+
+        @media(max-width:800px){
+            .container-car-width{
+                width: 35% !important;
+                max-width: 35% !important;
+                min-width: 35% !important;
+            }
+        }
+
+        @media(max-width:800px){
+            .container-text-car-width{
+                width: 45% !important;
+                max-width: 45% !important;
+                min-width: 45% !important;
+            }
+        }
+
+        @media(max-width:800px){
+            .container-plus-width{
+                width: 10% !important;
+            }
+        }
+        .container-toll-width{
+                width: 40% !important;
+                max-width: 40% !important;
+            }
+
+        @media(max-width:800px){
+            .container-toll-width{
+                width: 40% !important;
+                max-width: 40% !important;
+                min-width: 40% !important;
+            }
+        }
+
+        .vermas{
+            margin: 0; 
+            text-decoration: underline; 
+            font-size: 15px; 
+            color: #333;
+            text-align: center;
+        }
+
+        .container-blue-cards{
+            width: 95%; 
+            margin: auto; 
+            background-color: #FF731B;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .banner-bestchoice{
+            height: auto; 
+            /*
+            min-height: 160px;
+            */
+            background-size: contain; 
+            background-repeat: no-repeat;
+            width: 100%;
+            background-image: url(https://www.nexustours.com/images/upload//Email-content/bannerCollageHeaderOfertas.png);
+        }
+        @media(max-width:800px){
+            .banner-bestchoice{
+                padding-top: 5vw !important;
+                background-image: none !important;
+                min-height: auto !important;
+            }
+        }
+
+        .text-bestchoice{
+            font-size: 17px;
+            color: white;
+            margin-top: 0;
+            line-height: 136%;
+            letter-spacing: -.44px;
+            font-weight: 500;
+        }
+        @media(max-width:800px){
+            .text-bestchoice{
+                font-size: 3.8vw !important;
+            }
+        }
+
+        .img-bestchoice{
+            width: 75px;
+            height: auto;
+        }
+        @media(max-width:800px){
+            .img-bestchoice{
+                width: 21vw !important;
+            }
+        }
+
+        .width-BannerChoice-40{
+            width: 42%; 
+        }
+        @media(max-width:800px){
+            .width-BannerChoice-40{
+                width: 0% !important; 
+            }
+        }
+
+        .width-BannerChoice-20{
+            width: 15%;
+            text-align: center;
+            vertical-align: top;
+            padding-top: 20px;
+        }
+        @media(max-width:800px){
+            .width-BannerChoice-20{
+                padding-left: 2vw !important;
+                padding-top: 0vw !important;
+            }
+        }
+
+        .width-BannerChoice-40-pad{
+            width: 40%;
+            padding: 20px 10px 0px 10px;
+            vertical-align: top;
+        }
+        @media(max-width:800px){
+            .width-BannerChoice-40-pad{
+                padding: 0vw 0vw 0vw 2vw !important;
+            }
+        }
+
+        .color-whl{
+            color: #FF731B;
+        }
+
+        .width-tollWA{
+            width: 50%;
+            max-width: 50%;
+            min-width: 50%;
+        }
+
+        .img-tollWA{
+            width: 25px;
+            height: 25px;
+            vertical-align: middle;
+        }
+
+        .container-toll{
+            width: fit-content; 
+            border-radius: 50px; 
+            padding: 10px 60px 10px 60px; 
+            margin: auto;
+        }
+        @media(max-width:800px){
+            .container-toll{
+                padding: 2vw 11vw !important;
+            }
+        }
+
+        .container-wa{
+            width: fit-content; 
+            border-radius: 50px; 
+            padding: 10px 55px 10px 55px; 
+            margin: auto;
+        }
+        @media(max-width:800px){
+            .container-wa{
+                padding: 2vw 10.7vw !important; 
+            }
+        }
+
+        .text-tollWA{
+            color: white; 
+            margin: 0;
+            padding-left: 5px;
+            font-size: 18px;
+        }
+
+        .container-banner-publicidad{
+            width: 95%; 
+            margin: auto;
+        }
+
+        .img-banner-publicidad{
+            width: 100%;
+        }
+
+        .stars-ofertas{
+            width: 174px;
+            height: auto;
+        }
+
+        @media(max-width:800px){
+            .stars-ofertas{
+                width: 40vw !important;
+            }
+        }
+
+        .tag-desk-table{
+            display: table;
+        }
+        @media(max-width:800px){
+            .tag-desk-table{
+                display: none !important;
+            }
+        }
+
+        .img-redes{
+            width: 35px;
+            height: 35px;
+        }
+
+        .containerSekura{
+            width: 95%; 
+            margin-left: auto; 
+            margin-right: auto; 
+            background-color: #FFFFFF; 
+            border-radius: 20px; 
+            overflow: hidden; 
+            box-sizing: border-box; 
+            padding: 25px 22px;
+        }
+        @media(max-width:800px){
+            .containerSekura{
+                padding: 25px 22px !important;
+                text-align: center !important;
+            }
+        }
+
+        .titleSekura{
+            margin-top: 0; 
+            margin-bottom: 0; 
+            color: #F17121; 
+            font-size: 20px; 
+            line-height: 107.7%; 
+            font-weight: 700;
+        }
+        @media(max-width:800px){
+            .titleSekura{
+                text-align: center !important;
+            }
+        }
+
+        .textSekura{
+            line-height: 107.7%; 
+            font-size: 14px; 
+            color: #646464; 
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        @media(max-width:800px){
+            .textSekura{
+                text-align: left !important;
+            }
+        }
+
+        .padTextSekura{
+            padding-right: 10px;
+        }
+
+        .imgSekura{
+            width: 175px;
+        }
+        @media(max-width:800px){
+            .imgSekura{
+                width: 60% !important;
+            }
+        }
+
+        .banner-kat-transfer{
+            background-image: url('https://www.nexustours.com/images/upload//Email-content/Banner-Kat-Transfer-RR.png'); 
+            height: 174px; 
+            width: 95%; 
+            margin-left: auto; 
+            margin-right: auto; 
+            background-size: contain; 
+            background-repeat: no-repeat; 
+            box-sizing: border-box; 
+            padding-top: 6.5%;
+        }
+        @media(max-width: 800px){
+            .banner-kat-transfer{
+                background-image: url('https://www.nexustours.com/images/upload//Email-content/Banner-Kat-Transfer-RR-mob.png') !important; 
+                height: 100vw !important;
+                background-size: 100% !important; 
+                padding-top: 11.5% !important;
+                width: 95% !important; 
+            }
+        }
+
+        .cta-banner-kat-transfer{
+            display: block; 
+            height: 87%; 
+            border-radius: 16px;
+        }
+
+        .background-flight{
+            width: 95%;
+            max-width: 95%;
+            margin: auto;
+            box-sizing: border-box;
+            background-image: url("https://www.nexustours.com/images/upload//Email-content/BD/background_flight_RR_desk.png");
+            height: 141.28px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        @media(max-width:800px){
+            .background-flight{
+                background-image: url("https://www.nexustours.com/images/upload//Email-content/BD/background_flight_RR_mob.png") !important;
+                background-size: contain !important;
+                height: 75vw !important;
+            }
+        }
+
+        .container-flight-cta{
+            width: fit-content; 
+            margin-left: 16%; 
+            margin-top: 4%;
+        }
+        @media(max-width:800px){
+            .container-flight-cta{
+                margin-left: auto !important;
+                margin-right: auto !important; 
+                margin-top: 5vw !important;
+            }
+        }
+
+        .text-flight{
+            text-align: center; 
+            width: fit-content; 
+            line-height: 117.30%; 
+            font-weight: 700; 
+            font-size: 22px; 
+            margin-top: 0;
+            letter-spacing: 1px;
+        }
+        @media(max-width:800px){
+            .text-flight{
+                font-size: 6.5vw !important; 
+                letter-spacing: .3vw !important;
+            }
+        }
+
+        .white-nexus{
+            color: #FFFFFF;
+        }
+
+        .subcontainer-flight-cta{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .flight-cta{
+            width: fit-content; 
+            background-color: #F17121; 
+            border-radius: 30px; 
+            padding: 1px 15px 1px 20px;
+        }
+        @media(max-width:800px){
+            .flight-cta{
+                padding: .2vw 6vw .2vw 5vw !important;
+            }
+        }
+
+        .text-flight-cta{
+            font-weight: 700; 
+            font-size: 18px; 
+            margin: 0;
+        }
+        @media(max-width:800px){
+            .text-flight-cta{
+                font-size: 5vw !important; 
+            }
+        }
+
+        .img-cross-flight{
+            padding-top: 5px; 
+            padding-left: 7px;
+        }
+        @media(max-width:800px){
+            .img-cross-flight{
+                padding-top: 1.5vw !important; 
+                padding-left: 1vw !important;
+                height: 5vw !important;
+            }
+        }
+
+        .containerPromocode{
+            padding: 10px; 
+            border: 1px dashed white; 
+            width: fit-content; 
+            border-radius: 11px; 
+            background-color: #F17121;
+        }
+        @media(max-width:800px){
+            .containerPromocode{
+                padding: 2vw !important;
+            }
+        }
+
+        .termsOfertas{
+            text-align: center; 
+            margin-top: 0; 
+            margin-bottom: 24px; 
+            color: white; 
+            font-size: 14px;
+        }
+
+        @media(max-width:800px){
+            .containerBannerHeaderMob{
+                padding-left: 2vw !important;
+                padding-right: 2vw !important;
+            }
+        }
+
+        .parrafo-card-center{
+            font-size: 16px;
+            line-height: 134%;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .containerSectionProductos{
+            background-color: #FFF; 
+            width: 95%; 
+            margin: auto; 
+            border-radius: 15px; 
+            padding: 25px 0;
+        }
+
+        .titleSectionProductos{
+            text-align: center; 
+            width: 90%; 
+            margin-top: 0;
+            margin-left: auto;
+            margin-right: auto; 
+            font-size: 25px;
+        }
+        @media(max-width:800px){
+            .titleSectionProductos{
+                font-size: 5vw !important;
+            }
+        }
+
+        .bgImgProductos{
+            width: 100%; 
+            background-position: center; 
+            background-size: cover; 
+            border-radius: 15px; 
+            height: 140px; 
+            padding-top: 104px;
+        }
+        @media(max-width:800px){
+            .bgImgProductos{
+                height: 38vw !important; 
+                padding-top: 29vw !important;
+            }
+        }
+
+        .botonBookNow{
+            display: block; 
+            margin-left: auto; 
+            margin-right: 8px; 
+            width: fit-content;
+        }
+
+        .containerBotonBookNow{
+            background-color: #F17121; 
+            width: 107px; 
+            border-radius: 30px; 
+            padding: 5px 10px;
+        }
+        @media(max-width:800px){
+            .containerBotonBookNow{
+                width: 27vw !important; 
+                padding: 1vw 3vw !important;
+            }
+        }
+
+        .botonCTA{
+            font-size: 12px; 
+            color: white; 
+            padding-right: 10px; 
+            font-weight: 700;
+        }
+        @media(max-width:800px){
+            .botonCTA{
+                font-size: 3vw !important; 
+                padding-right: 2vw !important; 
+            }
+        }
+
+        .plusCTA{
+            width: 12px; 
+            height: 12px; 
+            display: block;
+        }
+        @media(max-width:800px){
+            .plusCTA{
+                width: 3vw !important; 
+                height: 3vw !important;
+            }
+        }
+
+        .container90{
+            width: 90%; 
+            margin-left: auto; 
+            margin-right: auto;
+        }
+        .imgTour{
+            width: 100%;
+            display: block;
+            border-radius: 16px;
+        }
+        .titleTour{
+            margin: 0;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .txtLocation{
+            margin: 2px 0 10px 0;
+            color: #FF621D;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+        .parrafoTour{
+            margin: 0;
+            color: #6B6B6B;
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 5%;
+        }
+        .cardBlue{
+            border-radius: 10px;
+            background: #FF731B;
+        }
+        .txtCardBlue{
+            color: #FFF;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 134%;
+        }
+        .txtCardBlue span{
+            color: #FF731B;
+        }
+        .imgApp{
+            display: block;
+            width: 100%;
+        }
+        .termsPrivacy{
+            color: #FFF;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 180%;
+        }
+        .copyright{
+            margin: 5px auto 40px auto;
+            width: 90%;
+            color: #FFF;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 180%;
+        }
+        .desktop{
+            display: block;
+        }
+        .mobile{
+            display: none;
+        }
+        .btn_book{
+            border-radius: 9px;
+            background: #F17121;
+            padding: 2% 4%;
+            color: #FFF;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        .btn_book svg{
+            margin-left: 2%;
+        }
+        @media (max-width: 520px) {
+            .desktop{
+                display: none;
+            }
+            .mobile{
+                display: block;
+            }
+            .imgBGTour{
+                height: 250px!important;
+            }
+        }
+        .subtxtBig{
+            color: #000000;
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 118%;
+        }
+        .subtxtBig.resize{
+            width: 50%;
+            margin:3% auto 5% auto;
+        }
+        .txtIcons{
+            color: #333;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 131%;
+        }
+        .txtIcons span{
+            color: #FF731B;
+            font-weight: 800;
+        }
+        .orange{
+            color: #F17121;
+        }
+        @media (max-width:660px) {
+            .subtxtBig.resize{
+                width: 60%;
+            }
+        }
+        @media (max-width: 520px) {
+            .desktop{
+                display: none!important;
+            }
+            .mobile{
+                display: block!important;
+            }
+            .subtxtBig{
+                font-size: 24px;
+            }
+            .subtxtBig.resize{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-email">
+        <div id="email" class="body-email">
+            <table id="LogoHeader" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        
+                        <div class="banner-header" alt="banner-header" width="100%">
+                            <div class="container-logo-nexus">
+                                <div class="logo-nexus">
+                                    <img alt="logo-nexus" src="https://www.nexustours.com/images/upload//Email-content/BD/Logo-Nexus-Rebrand.png">
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            </table>
+            <table id="TextBlock1" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%" style="margin-top: -28px;">
+                <tr>
+                    <td>
+                        <div class="card-email">
+                            <p class="parrafo-card">
+                                <span class="bold-text">Dear <span class="orange-nexus">{{contact.firstname}}!</span>,</span>
+                                <br><br>
+                                We're just a few hours away from welcoming you, and we want to make sure everything is ready for your arrival. Have you already prepared your itinerary?
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table style="table-layout: fixed;margin:0 auto 40px auto;" class="desktop" role="presentation" border="0" cellspacing="0" width="90%">
+                <tbody>
+                    <tr>
+                        <td style="width: 50%; padding-right: 10px;">
+                            <a href="{{contact.excursion_1}}&contact_id={{contact.id}}">
+                                <div class="imgBGTour" style="background-image: url('{{contact.photo_excursion_1}}')"></div>
+                            </a>
+                        </td>
+                        <td style="width: 50%; padding-left: 10px;">
+                            <p class="titleTour">{{contact.name_excursion_1}}</p>
+                            <div class="txtLocation">
+                                <img src="https://www.nexustours.com/images/upload//Email-content/2024/Royalton/locationR.png" style="margin-right: 8px;">{{contact.Destination}}
+                            </div>
+                            <p class="parrafoTour">{{contact.description_excursion_1}}</p>
+                            <a href="{{contact.excursion_1}}&contact_id={{contact.id}}" class="btn_book">Book Now<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                                <path d="M13.8674 5.83333H8.824V1.16667C8.824 0.857247 8.69116 0.560501 8.45471 0.341709C8.21825 0.122917 7.89755 0 7.56315 0C7.22875 0 6.90805 0.122917 6.6716 0.341709C6.43514 0.560501 6.3023 0.857247 6.3023 1.16667V5.83333H1.2589C0.924499 5.83333 0.603797 5.95625 0.367342 6.17504C0.130886 6.39383 -0.00195312 6.69058 -0.00195312 7C-0.00195312 7.30942 0.130886 7.60616 0.367342 7.82496C0.603797 8.04375 0.924499 8.16667 1.2589 8.16667H6.3023V12.8333C6.3023 13.1428 6.43514 13.4395 6.6716 13.6583C6.90805 13.8771 7.22875 14 7.56315 14C7.89755 14 8.21825 13.8771 8.45471 13.6583C8.69116 13.4395 8.824 13.1428 8.824 12.8333V8.16667H13.8674C14.2018 8.16667 14.5225 8.04375 14.759 7.82496C14.9954 7.60616 15.1283 7.30942 15.1283 7C15.1283 6.69058 14.9954 6.39383 14.759 6.17504C14.5225 5.95625 14.2018 5.83333 13.8674 5.83333Z" fill="white"/>
+                              </svg></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table style="table-layout: fixed;margin:0 auto 40px auto;" class="mobile" role="presentation" border="0" cellspacing="0" width="90%">
+                <tbody>
+                    <tr>
+                        <td style="width: 50%; padding-right: 10px; padding-bottom: 10px;">
+                            <a href="{{contact.excursion_1}}&contact_id={{contact.id}}">
+                                <div class="imgBGTour" style="background-image: url('{{contact.photo_excursion_1}}')"></div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%; padding-left: 10px;">
+                            <p class="titleTour">{{contact.name_excursion_1}}</p>
+                            <div class="txtLocation">
+                                <img src="https://www.nexustours.com/images/upload//Email-content/2024/Royalton/locationR.png" style="margin-right: 8px;">{{contact.Destination}}
+                            </div>
+                            <p class="parrafoTour">{{contact.description_excursion_1}}</p>
+                            <a href="{{contact.excursion_1}}&contact_id={{contact.id}}" class="btn_book">Book Now<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                                <path d="M13.8674 5.83333H8.824V1.16667C8.824 0.857247 8.69116 0.560501 8.45471 0.341709C8.21825 0.122917 7.89755 0 7.56315 0C7.22875 0 6.90805 0.122917 6.6716 0.341709C6.43514 0.560501 6.3023 0.857247 6.3023 1.16667V5.83333H1.2589C0.924499 5.83333 0.603797 5.95625 0.367342 6.17504C0.130886 6.39383 -0.00195312 6.69058 -0.00195312 7C-0.00195312 7.30942 0.130886 7.60616 0.367342 7.82496C0.603797 8.04375 0.924499 8.16667 1.2589 8.16667H6.3023V12.8333C6.3023 13.1428 6.43514 13.4395 6.6716 13.6583C6.90805 13.8771 7.22875 14 7.56315 14C7.89755 14 8.21825 13.8771 8.45471 13.6583C8.69116 13.4395 8.824 13.1428 8.824 12.8333V8.16667H13.8674C14.2018 8.16667 14.5225 8.04375 14.759 7.82496C14.9954 7.60616 15.1283 7.30942 15.1283 7C15.1283 6.69058 14.9954 6.39383 14.759 6.17504C14.5225 5.95625 14.2018 5.83333 13.8674 5.83333Z" fill="white"/>
+                              </svg></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--FIN DE PRODUCTO1-->
+            <table style="table-layout: fixed;margin:0 auto 40px auto;" class="desktop" role="presentation" border="0" cellspacing="0" width="90%">
+                <tbody>
+                    <tr>
+                        <td style="width: 50%; padding-right: 10px;">
+                            <p class="titleTour">{{contact.name_excursion_2}}</p>
+                            <div class="txtLocation">
+                                <img src="https://www.nexustours.com/images/upload//Email-content/2024/Royalton/locationR.png" style="margin-right: 8px;">{{contact.Destination}}
+                            </div>
+                            <p class="parrafoTour">{{contact.description_excursion_2}}</p>
+                            <a href="{{contact.excursion_2}}&contact_id={{contact.id}}" class="btn_book">Book Now<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                                <path d="M13.8674 5.83333H8.824V1.16667C8.824 0.857247 8.69116 0.560501 8.45471 0.341709C8.21825 0.122917 7.89755 0 7.56315 0C7.22875 0 6.90805 0.122917 6.6716 0.341709C6.43514 0.560501 6.3023 0.857247 6.3023 1.16667V5.83333H1.2589C0.924499 5.83333 0.603797 5.95625 0.367342 6.17504C0.130886 6.39383 -0.00195312 6.69058 -0.00195312 7C-0.00195312 7.30942 0.130886 7.60616 0.367342 7.82496C0.603797 8.04375 0.924499 8.16667 1.2589 8.16667H6.3023V12.8333C6.3023 13.1428 6.43514 13.4395 6.6716 13.6583C6.90805 13.8771 7.22875 14 7.56315 14C7.89755 14 8.21825 13.8771 8.45471 13.6583C8.69116 13.4395 8.824 13.1428 8.824 12.8333V8.16667H13.8674C14.2018 8.16667 14.5225 8.04375 14.759 7.82496C14.9954 7.60616 15.1283 7.30942 15.1283 7C15.1283 6.69058 14.9954 6.39383 14.759 6.17504C14.5225 5.95625 14.2018 5.83333 13.8674 5.83333Z" fill="white"/>
+                              </svg></a>
+                        </td>
+                        <td style="width: 50%; padding-left: 10px;">
+                            <a href="{{contact.excursion_2}}&contact_id={{contact.id}}">
+                                <div class="imgBGTour" style="background-image: url('{{contact.photo_excursion_2}}')"></div>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table style="table-layout: fixed;margin:0 auto 40px auto;" class="mobile" role="presentation" border="0" cellspacing="0" width="90%">
+                <tbody>
+                    <tr>
+                        <td style="width: 50%; padding-right: 10px; padding-bottom: 10px;">
+                            <a href="{{contact.excursion_2}}&contact_id={{contact.id}}">
+                                <div class="imgBGTour" style="background-image: url('{{contact.photo_excursion_2}}')"></div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%; padding-left: 10px;">
+                            <p class="titleTour">{{contact.name_excursion_2}}</p>
+                            <div class="txtLocation">
+                                <img src="https://www.nexustours.com/images/upload//Email-content/2024/Royalton/locationR.png" style="margin-right: 8px;">{{contact.Destination}}
+                            </div>
+                            <p class="parrafoTour">{{contact.description_excursion_2}}</p>
+                            <a href="{{contact.excursion_2}}&contact_id={{contact.id}}" class="btn_book">Book Now<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                                <path d="M13.8674 5.83333H8.824V1.16667C8.824 0.857247 8.69116 0.560501 8.45471 0.341709C8.21825 0.122917 7.89755 0 7.56315 0C7.22875 0 6.90805 0.122917 6.6716 0.341709C6.43514 0.560501 6.3023 0.857247 6.3023 1.16667V5.83333H1.2589C0.924499 5.83333 0.603797 5.95625 0.367342 6.17504C0.130886 6.39383 -0.00195312 6.69058 -0.00195312 7C-0.00195312 7.30942 0.130886 7.60616 0.367342 7.82496C0.603797 8.04375 0.924499 8.16667 1.2589 8.16667H6.3023V12.8333C6.3023 13.1428 6.43514 13.4395 6.6716 13.6583C6.90805 13.8771 7.22875 14 7.56315 14C7.89755 14 8.21825 13.8771 8.45471 13.6583C8.69116 13.4395 8.824 13.1428 8.824 12.8333V8.16667H13.8674C14.2018 8.16667 14.5225 8.04375 14.759 7.82496C14.9954 7.60616 15.1283 7.30942 15.1283 7C15.1283 6.69058 14.9954 6.39383 14.759 6.17504C14.5225 5.95625 14.2018 5.83333 13.8674 5.83333Z" fill="white"/>
+                              </svg></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="subtxtBig" style="width: 70%;margin:3% auto 5% auto;">Visit website, call us or visit your rep to get:​</p>
+            <a class="botonBookNow" href="https://www.nexustours.com/?utm_source=nexusb2c&utm_medium=mail&utm_campaign=PreArrival_3Dias&contact_id={{contact.id}}" target="_blank"> 
+            <img src="https://www.nexustours.com/images/upload//Email-content/2024/Royalton/decoPreArrival3.png" class="imgApp desktop"></a>
+            <a class="botonBookNow" href="https://www.nexustours.com/?utm_source=nexusb2c&utm_medium=mail&PreArrival_3Dias&contact_id={{contact.id}}" target="_blank"> 
+            <img src="https://www.nexustours.com/images/upload//Email-content/2024/Royalton/decoPreArrival3MOB.png" class="imgApp mobile"></a>
+
+            <table style="table-layout: fixed;margin:0 auto 40px auto;" class="desktop" role="presentation" border="0" cellspacing="0" width="90%">
+                <tbody>
+                    <tr width="100%">
+                        <td width="15%">
+                            <a class="botonBookNow" href="https://www.nexustours.com/transfers/?utm_source=nexusb2c&utm_medium=mail&utm_campaign=PreArrival_3Dias&contact_id={{contact.id}}" target="_blank">
+                            <img src="https://www.nexustours.com/images/upload//Email-content/2024/Royalton/carPreArrival3.png" alt=""></a>
+                        </td>
+                        <td width="30%">
+                            <p class="txtIcons" style="margin-right: 4%;"><span>Transfers:</span> <br>If private, your trip could save a few hours.</p>
+                        </td>
+                        <td width="15%">
+                            <a class="botonBookNow" href="https://www.nexustours.com/services/?utm_source=nexusb2c&utm_medium=mail&utm_campaign=PreArrival_3Dias&contact_id={{contact.id}}" target="_blank">
+                            <img src="https://www.nexustours.com/images/upload//Email-content/2024/Royalton/bookingPreArrival3.png" alt=""></a>
+                        </td>
+                        <td width="35%">
+                            <p class="txtIcons"><span>Booking excursions:</span> <br>
+                                Booking excursions prior arrival will maximize your stay.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="15%">
+                            <a class="botonBookNow" href="https://www.nexustours.com/services/?utm_source=nexusb2c&utm_medium=mail&utm_campaign=PreArrival_3Dias&contact_id={{contact.id}}" target="_blank">
+                            <img src="https://www.nexustours.com/images/upload//Email-content/2024/Royalton/insurancePreArrival3.png" alt=""></a>
+                        </td>
+                        <td width="30%">
+                            <p class="txtIcons"  style="margin-right: 4%;"><span>Travel assistance:</span> <br>
+                                Provides peace of mind.</p>
+                        </td>
+                        <td width="15%">
+                            <a class="botonBookNow" href="https://goo.su/eS26UG" target="_blank">
+                            <img src="https://www.nexustours.com/images/upload//Email-content/2024/Royalton/esimPreArrival3.png" alt=""></a>
+                        </td>
+                        <td width="35%">
+                            <p class="txtIcons"><span>eSIM:</span> <br>
+                                Download Holafly and redeem 1GB of free data with this code:<strong>NEXUS-TAJ7Q8CV</strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table style="table-layout: fixed;margin:30px auto 40px auto;" class="mobile" role="presentation" border="0" cellspacing="0" width="90%">
+                <tbody>
+                    <tr>
+                        <td width="15%">
+                            <a class="botonBookNow" href="https://www.nexustours.com/transfers/?utm_source=nexusb2c&utm_medium=mail&utm_campaign=PreArrival_3Dias&contact_id={{contact.id}}" target="_blank">
+                            <img src="https://www.nexustours.com/images/upload//Email-content/2024/Royalton/carPreArrival3.png" alt=""></a>
+                        </td>
+                        <td width="80%">
+                            <p class="txtIcons" style="margin-left: 4%;"><span>Transfers:</span> <br>If private, your trip could save a few hours.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="15%">
+                            <a class="botonBookNow" href="https://www.nexustours.com/services/?utm_source=nexusb2c&utm_medium=mail&utm_campaign=PreArrival_3Dias&contact_id={{contact.id}}" target="_blank">
+                            <img src="https://www.nexustours.com/images/upload//Email-content/2024/Royalton/bookingPreArrival3.png" alt=""></a>
+                        </td>
+                        <td width="80%">
+                            <p class="txtIcons" style="margin-left: 4%;"><span>Booking excursions:</span> <br>
+                                Booking excursions prior arrival will maximize your stay.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="15%">
+                            <a class="botonBookNow" href="https://www.nexustours.com/services/?utm_source=nexusb2c&utm_medium=mail&utm_campaign=PreArrival_3Dias&contact_id={{contact.id}}" target="_blank">
+                            <img src="https://www.nexustours.com/images/upload//Email-content/2024/Royalton/insurancePreArrival3.png" alt=""></a>
+                        </td>
+                        <td width="30%">
+                            <p class="txtIcons"  style="margin-left: 4%;"><span>Travel assistance:</span> <br>
+                                Provides peace of mind.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="15%">
+                            <a class="botonBookNow" href="https://goo.su/eS26UG" target="_blank">
+                            <img src="https://www.nexustours.com/images/upload//Email-content/2024/Royalton/esimPreArrival3.png" alt=""></a>
+                        </td>
+                        <td width="35%">
+                            <p class="txtIcons" style="margin-left: 4%;"><span>eSIM:</span> <br>
+                                Download Holafly and redeem 1GB of free data with this code:<strong>NEXUS-TAJ7Q8CV</strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table><table id="TextBlock3" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="card-email">
+                            <p class="parrafo-card-center margin-bottom-15">
+                            <strong>REDEEM CODE: NEXUS-TAJ7Q8CV</strong> 
+                            </p>
+
+            <a href="https://goo.su/eS26UG" target="_blank">
+                <img class="imgApp margin-bottom-22 desktop" src="https://www.nexustours.com/images/upload//Email-content/2024/Royalton/banner_nxt_appp.jpg" alt="">
+            </a>
+            <a href="https://goo.su/eS26UG" target="_blank">
+                <img class="imgApp margin-bottom-22 mobile" src="https://www.nexustours.com/images/upload//Email-content/2024/Royalton/banner_nxt_appp.jpg?v=1" alt="">
+            </a>            
+            <table id="TextBlock3" class="margin-bottom-22" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="card-email">
+                            <p class="parrafo-card-center margin-bottom-15">
+                                If you’d like to learn more about these special offers, simply schedule a call with your concierge, and we’ll be happy to share all the details.
+                            </p>
+                            <table class="tag-desk-table margin-bottom-15" role="presentation" border="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td class="width-tollWA">
+                                        <div style="width: fit-content; margin: auto;">
+                                            <a href="tel:{{contact.ICC_Tel}}" target="_blank">
+                                                <div class="background-nexus container-toll">
+                                                    <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td>
+                                                                <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/2024/Royalton/call_black.png">
+                                                            </td>
+                                                            <td>
+                                                                <h4 class="text-tollWA">
+                                                                    Call us
+                                                                </h4>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="width-tollWA">
+                                        <div style="width: fit-content; margin: auto;">
+                                            <a href="https://wa.me/529981472600?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
+                                                <div class="background-nexus container-wa">
+                                                    <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td>
+                                                                <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/wa-green-email.png">
+                                                            </td>
+                                                            <td>
+                                                                <h4 class="text-tollWA">
+                                                                    Whatsapp
+                                                                </h4>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="tag-mob margin-bottom-15">
+                                <div class="margin-bottom-10">
+                                    <a href="tel:{{contact.ICC_Tel}}" target="_blank">
+                                        <div class="background-nexus container-toll">
+                                            <table role="presentation" border="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td>
+                                                        <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/2024/Royalton/call_black.png">
+                                                    </td>
+                                                    <td>
+                                                        <h4 class="text-tollWA">
+                                                            Call us
+                                                        </h4>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a href="https://wa.me/529981472600?text=Got%20it.%20Let's%20connect%20you%20to%20a%20NexusTours%20expert." target="_blank">
+                                    <div class="background-nexus container-wa">
+                                        <table role="presentation" border="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td>
+                                                    <img class="img-tollWA" src="https://www.nexustours.com/images/upload//Email-content/wa-green-email.png">
+                                                </td>
+                                                <td>
+                                                    <h4 class="text-tollWA">
+                                                        Whatsapp
+                                                    </h4>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </a>
+                            </div>
+                            <p class="parrafo-card-center margin-bottom-15"><strong>We're here to assist you with anything you need.</strong></p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="RedesSociales" class="background-redes-table" role="presentation" border="0" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <div class="container-text">
+                            <a href="https://www.nexustours.com/?utm_source=nexusb2c&utm_medium=mail&utm_campaign=PreArrival_3Dias&contact_id={{contact.id}}" target="_blank" style="text-align: center;">
+                                <h3 class="dominio">
+                                    www.nexustours.com
+                                </h3>
+                            </a>
+                            <table role="presentation" border="0" cellspacing="0" width="45%" style="margin: 15px auto 15px auto;">
+                                <tr>
+                                    <td ><a class="termsPrivacy" href="https://www.nexustours.com/terms-and-conditions">Terms and conditions</a></td>
+                                    <td ><a class="termsPrivacy" href="https://www.nexustours.com/privacy-policy">Privacy policy</a></td>
+                                </tr>
+                            </table>
+                            <p class="copyright">© 1999–2024 NexusTours Los Olivos 66 Boulevard Colosio mza 66, sm 310, lote 24, 77560 Cancún, Q.R. Add nexuspromotions@nexustours.com to your address book to ensure you receive the NexusTours newsletter.</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>

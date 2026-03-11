@@ -1,0 +1,27 @@
+{
+  "name": "template-docs-platform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "docs:dev": "vitepress dev docs",
+  "docs:build": "vitepress build docs",
+  "docs:preview": "vitepress preview docs",
+  "generate:templates": "node scripts/generate-templates-json.mjs"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelgrhub/template-docs-platform.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miguelgrhub/template-docs-platform/issues"
+  },
+  "homepage": "https://github.com/miguelgrhub/template-docs-platform#readme",
+  "dependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.30"
+  }
+}

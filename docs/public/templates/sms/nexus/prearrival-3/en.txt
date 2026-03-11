@@ -1,0 +1,9 @@
+We’re excited to assist you with your upcoming trip to {{contact.Destination}}.
+
+Upgrade your stay with an exclusive transfer upgrade— tap to WhatsApp us now and elevate your ride: https://api.whatsapp.com/send?phone=529981472600 —or explore our top 3 awarded experiences of {{contact.year}} in {{contact.Destination}} here: {{contact.deeplink_sms}}.
+
+Your Local Expert is just a click away. Call us at {{contact.ICC_Tel}}.
+Rest of World +52 998 251 6559
+
+Reply ‘Stop’ to unsubscribe from messages.
+*Message and data rates may apply.

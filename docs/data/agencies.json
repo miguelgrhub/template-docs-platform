@@ -1,0 +1,82 @@
+[
+  {
+    "id": "nexus",
+    "name": "Nexus",
+    "description": "Main NexusTours brand templates."
+  },
+  {
+    "id": "sunwing",
+    "name": "Sunwing",
+    "description": "Templates for Sunwing communications."
+  },
+  {
+    "id": "westjet",
+    "name": "Westjet",
+    "description": "Templates for Westjet communications."
+  },
+  {
+    "id": "royalton",
+    "name": "Royalton",
+    "description": "Templates for Royalton communications."
+  },
+  {
+    "id": "planet-hollywood",
+    "name": "Planet Hollywood",
+    "description": "Templates for Planet Hollywood communications."
+  },
+  {
+    "id": "princess",
+    "name": "Princess",
+    "description": "Templates for Princess communications."
+  },
+  {
+    "id": "vacation-express",
+    "name": "Vacation Express",
+    "description": "Templates for Vacation Express communications."
+  },
+  {
+    "id": "westjet-quebec",
+    "name": "Westjet Quebec",
+    "description": "Templates for Westjet Quebec communications."
+  },
+  {
+    "id": "vista-sol",
+    "name": "Vista Sol",
+    "description": "Templates for Vista Sol communications."
+  },
+  {
+    "id": "latam",
+    "name": "Latam",
+    "description": "Templates for LATAM communications."
+  },
+  {
+    "id": "hype",
+    "name": "Hype",
+    "description": "Templates for Hype communications."
+  },
+  {
+    "id": "royalton-groups",
+    "name": "Royalton Groups",
+    "description": "Templates for Royalton Groups communications."
+  },
+  {
+    "id": "nexus-groups",
+    "name": "Nexus Groups",
+    "description": "Templates for Nexus Groups communications."
+  },
+  {
+    "id": "planet-groups",
+    "name": "Planet Groups",
+    "description": "Templates for Planet Groups communications."
+  },
+  {
+    "id": "luxe",
+    "name": "Luxe",
+    "description": "Templates for Luxe communications."
+  },
+  {
+    "id": "prime",
+    "name": "Prime",
+    "description": "Templates for Prime communications."
+  }
+]

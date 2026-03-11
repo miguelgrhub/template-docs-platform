@@ -1,0 +1,102 @@
+[
+  {
+    "id": "welcome",
+    "name": "Welcome",
+    "description": "Initial welcome message."
+  },
+  {
+    "id": "welcome-rep",
+    "name": "Welcome Rep",
+    "description": "Welcome message from representative."
+  },
+  {
+    "id": "postbooking",
+    "name": "Postbooking",
+    "description": "Message sent after booking confirmation."
+  },
+  {
+    "id": "postbooking-tba",
+    "name": "Postbooking TBA",
+    "description": "Postbooking message with pending details."
+  },
+  {
+    "id": "prearrival-20",
+    "name": "Prearrival 20",
+    "description": "Message sent 20 days before arrival."
+  },
+  {
+    "id": "prearrival-20-tba",
+    "name": "Prearrival 20 TBA",
+    "description": "Message sent 20 days before arrival with pending details."
+  },
+  {
+    "id": "prearrival-10",
+    "name": "Prearrival 10",
+    "description": "Message sent 10 days before arrival."
+  },
+  {
+    "id": "prearrival-10-tba",
+    "name": "Prearrival 10 TBA",
+    "description": "Message sent 10 days before arrival with pending details."
+  },
+  {
+    "id": "prearrival-7",
+    "name": "Prearrival 7",
+    "description": "Message sent 7 days before arrival."
+  },
+  {
+    "id": "prearrival-7-tba",
+    "name": "Prearrival 7 TBA",
+    "description": "Message sent 7 days before arrival with pending details."
+  },
+  {
+    "id": "prearrival-3",
+    "name": "Prearrival 3",
+    "description": "Message sent 3 days before arrival."
+  },
+  {
+    "id": "prearrival-3-tba",
+    "name": "Prearrival 3 TBA",
+    "description": "Message sent 3 days before arrival with pending details."
+  },
+  {
+    "id": "prearrival-2",
+    "name": "Prearrival 2",
+    "description": "Message sent 2 days before arrival."
+  },
+  {
+    "id": "prearrival-1",
+    "name": "Prearrival 1",
+    "description": "Message sent 1 day before arrival."
+  },
+  {
+    "id": "pick-up-1",
+    "name": "Pick Up 1",
+    "description": "First pickup-related communication."
+  },
+  {
+    "id": "pick-up-2",
+    "name": "Pick Up 2",
+    "description": "Second pickup-related communication."
+  },
+  {
+    "id": "follow-up-1",
+    "name": "Follow Up 1",
+    "description": "First follow-up communication."
+  },
+  {
+    "id": "follow-up-1-rep",
+    "name": "Follow Up 1 Rep",
+    "description": "First follow-up communication from representative."
+  },
+  {
+    "id": "follow-up-2",
+    "name": "Follow Up 2",
+    "description": "Second follow-up communication."
+  },
+  {
+    "id": "follow-up-2-rep",
+    "name": "Follow Up 2 Rep",
+    "description": "Second follow-up communication from representative."
+  }
+]

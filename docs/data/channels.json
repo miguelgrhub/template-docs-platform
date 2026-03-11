@@ -1,0 +1,17 @@
+[
+  {
+    "id": "Email",
+    "name": "Email",
+    "description": "HTML email templates."
+  },
+  {
+    "id": "SMS",
+    "name": "SMS",
+    "description": "Plain text SMS templates."
+  },
+  {
+    "id": "WhatsApp",
+    "name": "WhatsApp",
+    "description": "Plain text WhatsApp templates with emojis or conversational formatting."
+  }
+]
